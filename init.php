@@ -1,9 +1,9 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 // Static file serving (CSS, JS, images)
-Route::set('docs/media', 'bootstrap/assets(/<file>)', array('file' => '.+'))
+Route::set('twitterbootstrap/assets', 'twitter-bootstrap/assets(/<file>)', array('file' => '.+'))
 	->defaults(array(
-		'controller' => 'bootstrap',
+		'controller' => 'twitterbootstrap',
 		'action'     => 'assets',
 		'file'       => NULL,
 	));
